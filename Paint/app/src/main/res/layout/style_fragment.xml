@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/fragment_container2"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+    <ImageView
+        android:text="×"
+        android:src="@drawable/close_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/StyleCloseButton" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:progress="10"
+        android:id="@+id/sizeSeekBar"
+        android:max="100"/>
+
+    <TextView
+        android:text="Size:10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sizeSeekBar"
+        android:layout_marginTop="200dp"
+        android:id="@+id/sizeText" />
+
+    <ImageView
+
+        android:src="@drawable/eraser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sizeSeekBar"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/eraserButton" />
+
+</RelativeLayout>

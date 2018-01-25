@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.android.paint.MainActivity">
+
+    <view
+        android:layout_width="540dp"
+        android:layout_height="match_parent"
+        class="example.android.paint.PaintView"
+        android:id="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:layout_width="270dp"
+        android:layout_height="1000dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/fragment_container"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+
+
+    <Button
+        android:text="Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ColorButton" />
+
+    <Button
+        android:text="Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/StyleButton" />
+
+    <Button
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/MenuButton" />
+
+    <Button
+        android:text="←"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/UndoButton" />
+
+    <Button
+        android:text="→"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/RedoButton" />
+
+</RelativeLayout>
